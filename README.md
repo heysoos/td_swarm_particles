@@ -30,6 +30,8 @@ Then for the parameters in second box on the right:
 - `Max G`: The maximum value of G. Possibly a redundant parameter.
 - `Friction`: How much particles slow down as a function of their current velocity.
 - `Random Vel.`: The magnitude of the random velocity that is added to each particle at each time.
+...
+- `Num. Colors`: This sets the number of different particle types there are. With 1 color, every particle is identical. With 2 colors, there are two types of particles and each has a (semi-)random interaction with other colored particles. I have customized how the different colors interact with a combination of random noise as well as some structural differences. Feel free to experiment with how different coloured particles interact. I think there is some magic to be discovered here by introducing certain symmetries or symmetry-breaking interactions. 
 
 The rest of the parameters should be self-explanatory.
 
