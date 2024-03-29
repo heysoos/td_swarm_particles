@@ -15,6 +15,23 @@ To run it, open the TD Project File `ParticleComputeShader.GUI.toe`. Right-click
 
 ### GUI Parameters
 ![](https://raw.githubusercontent.com/heysoos/td_swarm_particles/main/media/GUI.png)
+- `record`: records a video and saves it in the directory.
+- `seed`: Sets the random seed for the noise used to generate the inter-particle interactions (and any other randomly generated thing).
+- `dt`: Sets the rate at which time ticks. The smaller the better for accuracy, though the interactions aren't conserved, meaning they can change if you change dt.
+- `alignment`: An alignment of -1 means the cone of vision for each particle is a circle. At 0 it is a semi-circle, and for values less than 1 and greater than 0, it is a cone.
+- `C` vs. `G`: This 2D slider allows you to control the forces of the Coulomb (repulsive) and Gravitational (attractive) forces.
+- `R_c` vs. `R_g`: This 2D slider allows you to control the radii of the respective `C` and `G` forces.
+
+Then for the parameters in second box on the right:
+#### Particle Params.
+- `Res`: The resolution of the particle data textures. Since they are 2D textures, the `# of particles` = `Res * Res`.
+- `Mass Variance`: Different particle colours can have different masses, and this slider controls the variance of their distribution. 
+- `Force Ratio`: The ratio of values available in the `C` vs. `G` 2D slider. A large value will mean that the maximum `C` force is much stronger than the maximum `G` force.
+- `Max G`: The maximum value of G. Possibly a redundant parameter.
+- `Friction`: How much particles slow down as a function of their current velocity.
+- `Random Vel.`: The magnitude of the random velocity that is added to each particle at each time.
+
+The rest of the parameters should be self-explanatory.
 
 ### Loading in Audio Files
 ...
