@@ -6,13 +6,15 @@ The particles are simple boid systems. They feel attractive and repulsive forces
 
 To run it, open the TD Project File `ParticleComputeShader.GUI.toe`. Right-click on the `particles` container and click on `view` to create an interactive window for the GUI. Otherwise, double-click the container to enter the project and see all its components.
 
+![](https://github.com/heysoos/td_swarm_particles/blob/main/media/td_open.gif)
+
 
 ### Keyboard shortcuts
 - Press `1` to reset the particles. (You must do this if you change the # of particles in the GUI).
 - `SPACEBAR` toggles time.
 
 ### GUI Parameters
-...
+![](https://raw.githubusercontent.com/heysoos/td_swarm_particles/main/media/GUI.png)
 
 ### Loading in Audio Files
 ...
